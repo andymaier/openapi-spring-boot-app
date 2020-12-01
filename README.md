@@ -1,3 +1,35 @@
+# Steps to get this REST Api Spring Boot Server running
+
+1. Change the parent to spring boot 2.4
+
+`<parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.4.0</version>
+        <relativePath/> <!-- lookup parent from repository -->
+</parent>`
+
+2. Set the version of spring-openapi-ui
+
+`<dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>1.5.0</version>
+        </dependency>`
+
+3. Remove @EnableOpenApi Annotation in Swagger2SpringBoot.java
+
+3a. Remove the Imports for mentioned Annotation
+
+4. Organize Imports in the following classes:
+- Article.java
+- ArticleApiController.java
+- ArticleApi.java
+
+5. Get it running by executing mvn clean install and Play Button in your IDE
+
+
+
 # Swagger generated server
 
 Spring Boot Server 
